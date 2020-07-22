@@ -1,5 +1,5 @@
 <template>
-  <van-nav-bar :title="title" :fixed="isFixed" :left-arrow="isLeftArrow" :left-text="leftText" :right-text="rightText" @click-left="clickLeft" @click-right="clickRight">
+  <van-nav-bar :title="$route.meta.title" v-bind="$attrs" v-on="$listeners">
     <template v-if="!rightText" #right>
       <van-icon :name="rightIcon" :size="rightIconSize" right-text="搜索" />
     </template>
