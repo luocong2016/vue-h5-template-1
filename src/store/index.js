@@ -22,6 +22,7 @@ const mutations = {
   setToken (state, token) {
     state.token = token
   },
+  // van-tabbar-item name 配合 $route
   setTabBarActive (state,active) {
     state.tabBarActive = active
   }
